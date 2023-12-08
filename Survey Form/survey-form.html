@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /> 
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="styles.css" />
+    </head>
+    <body>
+        <div class="main-container">
+            <h1 id="title">Survey Form</h1>
+            <p id="description">Tell us how your experience was like!</p>
+            <form method="post" action="" id="survey-form">
+                <fieldset>
+                    <label id="name-label" for="name">Name <input id="name" name="name" type="text" placeholder="Please enter your name"  required/></label>
+                    <label id="email-label" for="email">Email <input id="email" name="email" type="email" placeholder="Please enter your email"  required/></label>
+                    <label id="number-label" for="number">Age <input id="number" name="number" type="number" placeholder="Please enter your age" min="16" max="120" required/></label>       
+                </fieldset>
+                <fieldset>
+                <legend>Would you recommend the event to a friend? (required)</legend>
+                <select id="dropdown">
+                    <option class="option-selection" value="">(select an option)</option>
+                    <option class="option-selection" value="Yes">Yes</option>
+                    <option class="option-selection" value="No">No</option>
+                </select>
+                </fieldset>
+                <fieldset>
+                    <legend>Ticket Type (required)</legend>
+                    <label for="normal-ticket"><input id="normal-ticket" class="inline" value="normal-ticket" name="ticket-type" type="radio" checked /> Normal</label>
+                    <label for="vip-ticket"><input id="vip-ticket" class="inline" name="ticket-type" value="vip-ticket" type="radio" /> VIP Pass</label>
+                    </fieldset>
+                <fieldset>
+                    <legend>What did you purchase?</legend>
+                    <label for="snacks">
+                        <input class="inline" id="snacks" type="checkbox" value="snacks">
+                    Snacks
+                    </label>
+                    <label for="drinks-alcoholic">
+                        <input class="inline" id="drinks-alcoholic" type="checkbox" value="drinks-alcoholic">
+                    Drinks (alcoholic)
+                    </label>
+                    <label for="drinks-non-alcoholic">
+                        <input class="inline" id="drinks-non-alcoholic" type="checkbox" value="drinks-non-alcholic">
+                    Drinks (non-alcoholic)</label>
+                    <label for="food">
+                        <input class="inline" id="food" type="checkbox" value="food">
+                    Food
+                    </label>
+                    <label for="merch">
+                    <input class="inline" id="merch" type="checkbox" value="merch">
+                    Merchandise
+                    </label>
+                </fieldset>
+                <fieldset>
+                    <label>Any tips for next time? 
+                        <textarea name="tips" rows="4" cols="3"></textarea>
+                    <label>
+                </fieldset>
+                <input id="submit" type="submit" value="Submit"/>
+            </form>
+        </div>
+    </body>
+</html> 
