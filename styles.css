@@ -1,0 +1,131 @@
+html,
+body {
+  width: 100%;
+  min-height: 100%;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.main-container {
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(255, 255, 255, 0.4);
+  display: block;
+  font-family: "Gill Sans", sans-serif;
+  font-size: 16px;
+  background: url("https://images.unsplash.com/photo-1519751138087-5bf79df62d5b?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+  background-size: cover;
+  background-repeat: no-repeat;
+  overflow-y: scroll;
+}
+
+.container {
+  height: 100vh;
+  width: 60vw;
+  background-color: rgba(255, 255, 255, 0.5);
+  margin: 0 auto;
+  overflow-x: hidden;
+}
+
+.inline {
+  width: unset;
+  margin: 0 0.5em 0 0;
+  vertical-align: middle;
+}
+
+.option {
+  padding-left: 2px;
+  padding-top: 2px;
+}
+
+h1,
+p {
+  text-align: center;
+  padding: 12px;
+}
+
+form {
+  margin: 0 auto;
+  width: 40vw;
+  min-height: 100vh;
+  background-color: rgba(255, 255, 255, 0.4);
+  overflow-x: hidden;
+  padding: 1rem;
+}
+
+fieldset {
+  border: none;
+  margin: 2rem;
+}
+
+label {
+  display: block;
+  margin: 0.5rem 0;
+}
+
+input,
+textarea,
+select {
+  margin: 0.5rem 0 0 0;
+  width: 100%;
+  min-height: 2rem;
+  border-radius: 8px;
+  border: 0.8px;
+  background-color: rgba(255, 255, 255, 0.9);
+}
+
+input {
+  padding: 4px;
+}
+
+input[type="checkbox"] {
+  width: auto;
+}
+
+/*  SUBMIT BUTTON */
+
+input[type="submit"] {
+  display: block;
+  margin: 1em auto;
+  height: 2em;
+  /* width: 40%; */
+  min-width: 300px;
+  font-size: 1.1rem;
+  border-radius: 4%;
+  border-color: #555;
+  background-color: antiquewhite;
+}
+
+input[type="submit"]:hover {
+  background-color: darksalmon;
+}
+
+#submit:focus {
+  background-color: burlywood;
+}
+
+/* CUSTOM SCROLLBAR */
+
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #888;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #888;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
