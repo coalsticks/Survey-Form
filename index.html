@@ -7,23 +7,23 @@
     <link rel="stylesheet" href="styles.css" />
     </head>
     <body>
-        <div class="main-container">
+        <main class="main-container">
             <h1 id="title">Survey Form</h1>
             <p id="description">Tell us how your experience was like!</p>
-            <form method="post" action="" id="survey-form">
+            <form id="survey-form">
                 <fieldset>
                     <label id="name-label" for="name">Name <input id="name" name="name" type="text" placeholder="Please enter your name"  required/></label>
                     <label id="email-label" for="email">Email <input id="email" name="email" type="email" placeholder="Please enter your email"  required/></label>
                     <label id="number-label" for="number">Age <input id="number" name="number" type="number" placeholder="Please enter your age" min="16" max="120" required/></label>       
                 </fieldset>
-                <fieldset>
-                <legend>Would you recommend the event to a friend? (required)</legend>
-                <select id="dropdown">
-                    <option class="option-selection" value="">(select an option)</option>
-                    <option class="option-selection" value="Yes">Yes</option>
-                    <option class="option-selection" value="No">No</option>
-                </select>
-                </fieldset>
+                <label for="dropdown" class="dropdown">
+                    Would you recommend the event to a friend? (required)
+                    <select id="dropdown">
+                        <option class="option-selection" value="">(select an option)</option>
+                        <option class="option-selection" value="Yes">Yes</option>
+                        <option class="option-selection" value="No">No</option>
+                    </select>
+                </label>
                 <fieldset>
                     <legend>Ticket Type (required)</legend>
                     <label for="normal-ticket"><input id="normal-ticket" class="inline" value="normal-ticket" name="ticket-type" type="radio" checked /> Normal</label>
@@ -58,6 +58,6 @@
                 </fieldset>
                 <input id="submit" type="submit" value="Submit"/>
             </form>
-        </div>
+        </main>
     </body>
 </html> 
