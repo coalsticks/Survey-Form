@@ -23,14 +23,6 @@ body {
   overflow-y: scroll;
 }
 
-.container {
-  height: 100vh;
-  width: 60vw;
-  background-color: rgba(255, 255, 255, 0.5);
-  margin: 0 auto;
-  overflow-x: hidden;
-}
-
 .inline {
   width: unset;
   margin: 0 0.5em 0 0;
@@ -50,14 +42,16 @@ p {
 
 form {
   margin: 0 auto;
-  width: 40vw;
-  min-height: 100vh;
+  max-width: 500px;
+  min-width: 300px;
+  min-height: 100%;
   background-color: rgba(255, 255, 255, 0.4);
   overflow-x: hidden;
   padding: 1rem;
 }
 
-fieldset {
+fieldset,
+.dropdown {
   border: none;
   margin: 2rem;
 }
@@ -76,6 +70,10 @@ select {
   border-radius: 8px;
   border: 0.8px;
   background-color: rgba(255, 255, 255, 0.9);
+}
+
+textarea {
+  resize: none;
 }
 
 input {
